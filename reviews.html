@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Reviews | Foodie Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #2b1d0e;
+      color: #fff;
+    }
+
+    .review-card img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 5px;
+      /* object-fit: cover;
+      margin: 0 auto;
+      display: block;
+    */}
+
+.review-card{
+ 
+  height: 270px;
+  width:250px ;
+  padding: 10px 12px;
+  border-radius: 15px;
+width: 250px;
+}
+
+
+.review-card h3{
+margin: 3px 0;
+font-size: 18px;
+color: orange;
+font-size: 16px;
+
+}
+
+.review-card p{
+  line-height: 1.2;
+  margin: 2px 0;
+  font-size: 13px;
+
+}
+
+    .review-section {
+      text-align: center;
+      padding: 5px 5px;
+      
+    }
+
+    .review-section h2 {
+      color: #ff6600;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .review-section p {
+      color: #ccc;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+
+    .reviews-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .review-card {
+      background-color: #1c1c1c;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+      transition: 0.3s;
+    }
+
+    .review-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255,102,0,0.5);
+    }
+
+    .review-text {
+      font-style: italic;
+      color: #ddd;
+      margin-bottom: 10px;
+    }
+
+    .review-name {
+      color: #ff8533;
+      font-weight: bold;
+    }
+
+    .stars {
+      color: gold;
+      margin-top: 8px;
+    }
+
+    /* ---------- Add Review Form ---------- */
+    .add-review {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #1a1a1a;
+      margin-top: 60px;
+    }
+
+    .add-review h3 {
+      color: #ff6600;
+      margin-bottom: 10px;
+      font-size: 26px;
+    }
+
+    .add-review p {
+      color: #bbb;
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2e2e2e;
+      color: #fff;
+      font-size: 15px;
+      outline: none;
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    button {
+      background-color: #ff6600;
+      border: none;
+      padding: 12px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff8533;
+      transform: scale(1.05);
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 30px 15px;
+      text-align: center;
+      border-top: 2px solid #ff6600;
+      margin-top: 60px;
+    }
+
+    footer p {
+      color: #bbb;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Review Cards  -->
+  <section class="review-section">
+    <h2>Our Happy Customers</h2>
+    <p>Real stories from people who love our food!</p>
+
+    <div class="reviews-container">
+      <div class="review-card">
+        <img src="girl3.jpg">
+        <p class="review-name">– Sara Khan</p>
+        <p class="stars">⭐⭐⭐⭐⭐</p>
+        <p class="review-text">"Absolutely loved the cheesy pizza! Fresh, hot and full of flavor!"</p>
+      </div>
+
+      <div class="review-card">
+       <img src="boy2.jpg">
+        <p class="review-name">– Ali Raza</p>
+        <p class="stars">⭐⭐⭐⭐⭐</p>
+         <p class="review-text">"The burgers are juicy and perfectly cooked. Highly recommend!"</p>
+      </div>
+
+      <div class="review-card">
+        <img src="girl2.jpg">
+        <p class="review-name">– Fatima Ahmed</p>
+         <p class="stars">⭐⭐⭐⭐⭐</p>
+        <p class="review-text">"Pasta was creamy and delicious! Definitely coming again."</p>
+       
+      </div>
+
+      <div class="review-card">
+        <img src="boy1.jpg">
+            <p class="review-name">– Hamza Qureshi</p>
+              <p class="stars">⭐⭐⭐⭐</p>
+        <p class="review-text">"Amazing atmosphere and great service. Loved the grilled steak!"</p>
+      
+      
+      </div>
+      <div class="review-card">
+        <img src="girl1.webp">
+          <p class="review-name">– Nadia Mir</p>
+        <p class="stars">⭐⭐⭐⭐⭐</p>    
+    <p class="review-text">"Fantastic flavors and quick delivery. The cold coffee is a must-try!"</p>
+   
+    
+  </div>
+
+  <div class="review-card">
+    <img src="boy3.jpg">
+    <p class="review-name">– Usman Khan</p>
+    <p class="stars">⭐⭐⭐⭐</p>
+    <p class="review-text">"Friendly staff and great portion sizes. Best place for family dinners."</p>
+  </div>
+    </div>
+  </section>
+
+  <!-- Add Review Form -->
+  <section class="add-review">
+    <h3>Add Your Review</h3>
+    <p>We’d love to hear your thoughts! Share your experience below.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <textarea placeholder="Write your review..." required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Foodie Hub | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | Foodie Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">Foodie<span>Hub</span></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="booking.html" class="active">Booking</a>
+            <a href="contact.html">contact</a>
+            <a href="reviews.html">Reviews</a>
+
+    </nav>
+  </header>
+
+  <section class="booking">
+    <h2>Book Your Table</h2>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="date" id="date" required>
+      <input type="time" id="time" required>
+      <input type="number" id="guests" placeholder="No. of Guests" required>
+      <textarea id="message" placeholder="Special Requests"></textarea>
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 FoodieHub | Reserve your seat now!</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

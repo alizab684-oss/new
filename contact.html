@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | FoodieHub</title>
+
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #2b1d0e;
+      color: #fff;
+    }
+
+    /* ===== Header & Navigation ===== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #000;
+      padding: 15px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      color: #ff6600;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      transition: 0.3s ease;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ff6600;
+      border-bottom: 2px solid #ff6600;
+    }
+
+    /* ===== Contact Page Layout ===== */
+    .contact-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 80px);
+    }
+
+    /* ===== Contact Form Container ===== */
+    .contact-container {
+      background: rgba(28, 28, 28, 0.6);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 40px 35px;
+      box-shadow: 0 0 25px rgba(255, 102, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      transition: all 0.4s ease;
+      width: 400px;
+    }
+
+    .contact-container:hover {
+      box-shadow: 0 0 35px rgba(255, 102, 0, 0.4);
+      transform: translateY(-3px);
+    }
+
+    /* ===== Text Styles ===== */
+    h2 {
+      color: #ff6600;
+      font-size: 28px;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      color: #ccc;
+      margin-bottom: 25px;
+      font-size: 15px;
+    }
+
+    /* ===== Form Fields ===== */
+    input, textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      font-size: 15px;
+      margin-bottom: 18px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #ff6600;
+      box-shadow: 0 0 8px #ff6600;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    /* ===== Submit Button ===== */
+    button {
+      width: 100%;
+      background: linear-gradient(135deg, #ff6600, #ff8533);
+      border: none;
+      padding: 12px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <h1>FoodieHub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="reviews.html">Reviews</a>
+    </nav>
+  </header>
+
+  <!-- ===== Contact Form Section ===== -->
+  <main class="contact-page">
+    <section class="contact-container">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Fill out the form below.</p>
+
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

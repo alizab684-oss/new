@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #3b2f2f; /* dark brown */
+      color: white;
+    }
+
+    .menu-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .menu-section h1 {
+      color: #ffb347;
+      margin-bottom: 10px;
+    }
+
+    .menu-section p {
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .menu-card {
+      background-color: #1e1e1e;
+      width: 280px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-card:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background-color: #3b2f2f; /* brown background behind image */
+    }
+
+    .menu-card h2 {
+      color: #ffb347;
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    .menu-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .menu-card.expanded ul {
+      max-height: 300px;
+      padding: 10px 0;
+    }
+
+    .menu-card li {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 15px;
+      color: #eee;
+    }
+
+    .menu-card li span {
+      color: #ffb347;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="menu-section">
+    <h1>Our Menu</h1>
+    <p>Click a category to view more items</p>
+
+    <div class="menu-container">
+
+      <div class="menu-card" onclick="toggleCard(this)">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80" alt="Burger">
+        <h2>🍔 Burgers</h2>
+        <ul>
+          <li>Classic Burger <span>$8.99</span></li>
+          <li>Cheese Burger <span>$9.50</span></li>
+          <li>Chicken Burger <span>$9.25</span></li>
+          <li>Double Burger <span>$11.00</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-card" onclick="toggleCard(this)">
+        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80" alt="Pasta">
+        <h2>🍝 Pasta</h2>
+        <ul>
+          <li>White Sauce Pasta <span>$7.99</span></li>
+          <li>Red Sauce Pasta <span>$8.50</span></li>
+          <li>Chicken Alfredo <span>$9.75</span></li>
+          <li>Veggie Delight <span>$7.50</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-card" onclick="toggleCard(this)">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=80" alt="Drinks">
+        <h2>☕ Drinks</h2>
+        <ul>
+          <li>Cold Coffee <span>$4.50</span></li>
+          <li>Mocha Frappe <span>$5.00</span></li>
+          <li>Lime Soda <span>$3.75</span></li>
+          <li>Chocolate Shake <span>$4.99</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-card" onclick="toggleCard(this)">
+        <img src="cakes.webp" alt="Desserts">
+
+        <h2>🍰 Desserts</h2>
+        <ul>
+          <li>Chocolate Lava Cake <span>$6.00</span></li>
+          <li>Vanilla Ice Cream <span>$3.50</span></li>
+          <li>Cheesecake Slice <span>$5.75</span></li>
+          <li>Brownie Sundae <span>$6.25</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function toggleCard(card) {
+      card.classList.toggle('expanded');
+    }
+  </script>
+
+</body>
+</html>
