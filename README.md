@@ -1,4 +1,4 @@
-# My Website
+#Resturant Website
 
 This is my simple website made with HTML, CSS, and JavaScript.
 
